@@ -59,7 +59,7 @@ PYTHONPATH=~/i1/chroma-wrinkles:~/i1/dct-coefficient-decoder python compute_scor
 ### Simple vs. DCT subsampling
 
 Chroma wrinkles are introduced by *libjpeg v6b* and older, as well as noticeable forks such as *libjpeg-turbo* and *mozjpeg*.
-From *libjpeg v7* on, *DCT scaling* become the default scaling operation. Therefore, newer versions of *libjpeg* do not introduce chroma wrinkles.
+From *libjpeg v7* on, *DCT scaling* became the default scaling operation. Therefore, newer versions of *libjpeg* do not introduce chroma wrinkles.
 Nevertheless, current versions of *libjpeg* resort to *simple scaling* instead of *DCT scaling* with the `-nosmooth` switch.  
 
 1. Update the paths to your local cjpeg and djpeg executables in `utils/constants.py`.
