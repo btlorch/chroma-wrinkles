@@ -5,16 +5,16 @@ Chroma wrinkles detector as described in "[Image Forensics from Chroma Subsampli
 ## Requirements
 
 * *DCT coefficient decoder* for decoding DCT coefficients from JPEG-compressed images. Please follow the instructions from the [GitHub repository](https://github.com/btlorch/dct-coefficient-decoder).
-* *Exiftool* and the Python wrapper [*pyexiftool*](https://github.com/smarnach/pyexiftool).
 * Python packages (available from *PyPi*):
 ```
 numpy
 pandas
 tqdm
 h5py
-exiftool
 scipy
+pyexiftool
 ```
+* The *exiftool* command line tool must be installed.
 
 ## Running the detector
 

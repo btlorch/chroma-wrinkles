@@ -41,7 +41,7 @@ def loop(data_dir, output_csv, detector, quality_factor_estimator_filename, qual
 
     buffer = []
     # Use single exiftool instance for all images
-    with exiftool.ExifTool() as et:
+    with exiftool.ExifToolHelper() as et:
         for i in tqdm(range(len(img_filenames))):
             img_filename = img_filenames[i]
             # We don't want the whole execution being terminated by a single malformed image, thus log exceptions and keep on going with the next image.
